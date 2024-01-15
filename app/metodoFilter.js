@@ -6,5 +6,5 @@ function filtrarLivros() {
     const categoria = elementoBtn.value // pegando a categoria do botão
 
     let livrosFiltrados = livros.filter(livro => livro.categoria == categoria)
-    console.table(livrosFiltrados)
+    exibirOsLivrosNaTela(livrosFiltrados)
 }

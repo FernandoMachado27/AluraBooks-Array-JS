@@ -1,6 +1,7 @@
 const elementoParaInserirLivros = document.getElementById('livros')
 
 function exibirOsLivrosNaTela(listaDeLivros) {
+  elementoParaInserirLivros.innerHTML = '' // conteúdo sempre será uma string vazia
     listaDeLivros.forEach(livro => {
         elementoParaInserirLivros.innerHTML += `
         <div class="livro">
